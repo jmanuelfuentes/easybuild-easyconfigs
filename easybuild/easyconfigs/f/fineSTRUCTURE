@@ -1,0 +1,21 @@
+name = 'fineSTRUCTURE'
+version = '2.0.4'
+
+homepage = 'http://www.paintmychromosomes.com/'
+description = """fineSTRUCTURE is a fast and powerful algorithm for identifying population structure using dense sequencing data.  By using the output of ChromoPainter as a (nearly) sufficient summary statistic, it is able to perform model-based Bayesian clustering on large datasets, including full resequencing data, and can handle up to 1000s of individuals. Full assignment uncertainty is given."""
+
+toolchain = {'name': 'goolf', 'version': '1.6.10'}
+
+sources = ['http://www.maths.bris.ac.uk/~madjl/finestructure/fs-2.0.4.tar.gz']
+
+dependencies = [('GSL', '1.16'),('GCC', '4.8.2'),('zlib', '1.2.8')]
+sanity_check_paths = {
+        'files': [
+                "bin/fs",
+                ],
+        'dirs': [
+                "bin",
+                ]
+        }
+
+moduleclass = 'bio'
