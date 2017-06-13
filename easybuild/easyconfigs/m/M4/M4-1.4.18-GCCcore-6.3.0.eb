@@ -11,7 +11,7 @@ description = """GNU M4 is an implementation of the traditional Unix macro proce
 toolchain = {'name': 'GCCcore', 'version': '6.3.0'}
 
 sources = [SOURCELOWER_TAR_GZ]
-source_urls = [GNU_SOURCE]
+source_urls = ['http://ftp.gnu.org/gnu/m4/']
 
 # use same binutils version that was used when building GCC toolchain
 builddependencies = [('binutils', '2.27', '', True)]
